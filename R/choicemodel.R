@@ -229,10 +229,11 @@ RespondentParametersTable <- function(resp.pars, title, subtitle, footer)
 
     footer <- paste0(footer, "column width: ", FormatAsReal(bin.size, decimals = 2), "; ")
 
-    HistTable(resp.pars, title = title, subtitle = subtitle, footer = footer,
+    HistTable(resp.pars, class.memberships = NULL, class.sizes = NULL, title = title, subtitle = subtitle, footer = footer,
               bin.size = bin.size, bin.min = bin.min, bin.max = bin.max, hist.width = 300,
-              hist.height = 20, color.negative = TRUE, show.tooltips = FALSE,
-              histogram.column.name = "Respondent Coefficients", stats.table)
+              hist.height = 20, color.negative = TRUE,  histogram.column.name = "Respondent Coefficients",
+              show.tooltips = FALSE, prior.columns = NULL, show.row.names = TRUE,
+              row.lines.to.thicken = NULL, stats.table)
 }
 
 #' @title print.FitChoice
@@ -248,6 +249,7 @@ ParameterStatisticsInfo <- function(parameter.statistics, parameter.names,
                                     n.classes)
 {
     n.rows <- nrow(parameter.statistics)
+    parameter.statistics <- as.data.frame(parameter.statistics)
     theta.statistics <- parameter.statistics[1:(n.rows / 2), ]
     theta.n.eff.ind <- which.min(theta.statistics[, 4])
     theta.n.eff <- FormatAsReal(theta.statistics[theta.n.eff.ind, 4],
