@@ -4,7 +4,9 @@
 \name{eggs.data}
 \alias{eggs.data}
 \title{The experiment question from the Eggs.Q project.}
-\format{A data.frame with 380 rows and 200 variables.}
+\format{
+A data.frame with 380 rows and 200 variables.
+}
 \usage{
 data(eggs)
 }

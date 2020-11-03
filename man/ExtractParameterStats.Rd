@@ -26,6 +26,8 @@ distribution from which individual coefficients are sampled.
     \code{\link{FitChoiceModel}} for an example, \code{\link{TracePlots}},
 \code{\link{PlotPosteriorIntervals}}
 
-Other HB diagnostics: \code{\link{PlotPosteriorIntervals}},
-  \code{\link{TracePlots}}
+Other HB diagnostics: 
+\code{\link{PlotPosteriorIntervals}()},
+\code{\link{TracePlots}()}
 }
+\concept{HB diagnostics}

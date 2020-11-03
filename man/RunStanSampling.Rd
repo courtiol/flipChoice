@@ -4,8 +4,18 @@
 \alias{RunStanSampling}
 \title{RunStanSampling}
 \usage{
-RunStanSampling(stan.dat, n.iterations, n.chains, max.tree.depth, adapt.delta,
-  seed, stan.model, stan.file, keep.beta, ...)
+RunStanSampling(
+  stan.dat,
+  n.iterations,
+  n.chains,
+  max.tree.depth,
+  adapt.delta,
+  seed,
+  stan.model,
+  stan.file,
+  keep.beta,
+  ...
+)
 }
 \arguments{
 \item{stan.dat}{The data to be passed to Stan.}

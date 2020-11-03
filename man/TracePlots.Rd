@@ -24,6 +24,8 @@ from which individual coefficients are sampled.
     \code{\link{FitChoiceModel}} for an example, \code{\link[rstan]{traceplot}},
 \code{\link{ExtractParameterStats}}, \code{\link{PlotPosteriorIntervals}}
 
-Other HB diagnostics: \code{\link{ExtractParameterStats}},
-  \code{\link{PlotPosteriorIntervals}}
+Other HB diagnostics: 
+\code{\link{ExtractParameterStats}()},
+\code{\link{PlotPosteriorIntervals}()}
 }
+\concept{HB diagnostics}

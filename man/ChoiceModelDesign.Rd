@@ -4,12 +4,21 @@
 \alias{ChoiceModelDesign}
 \title{Choice modeling experimental design}
 \usage{
-ChoiceModelDesign(design.algorithm = c("Random", "Shortcut",
-  "Balanced overlap", "Complete enumeration", "Efficient", "Partial profiles"),
-  attribute.levels = NULL, prior = NULL, n.questions, n.versions = 1,
-  alternatives.per.question, prohibitions = NULL, none.alternatives = 0,
-  labeled.alternatives = FALSE, n.constant.attributes = NULL,
-  output = "Labeled design", seed = 54123)
+ChoiceModelDesign(
+  design.algorithm = c("Random", "Shortcut", "Balanced overlap",
+    "Complete enumeration", "Efficient", "Partial profiles"),
+  attribute.levels = NULL,
+  prior = NULL,
+  n.questions,
+  n.versions = 1,
+  alternatives.per.question,
+  prohibitions = NULL,
+  none.alternatives = 0,
+  labeled.alternatives = FALSE,
+  n.constant.attributes = NULL,
+  output = "Labeled design",
+  seed = 54123
+)
 }
 \arguments{
 \item{design.algorithm}{The algorithm used to create the

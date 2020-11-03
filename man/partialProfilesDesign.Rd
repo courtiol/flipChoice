@@ -4,8 +4,14 @@
 \alias{partialProfilesDesign}
 \title{Construct an Optimal Partial Profile Design for Discrete Choice Experiments}
 \usage{
-partialProfilesDesign(levels.per.attribute, prior = NULL,
-  alternatives.per.question, n.questions, n.constant.attributes, seed = 123)
+partialProfilesDesign(
+  levels.per.attribute,
+  prior = NULL,
+  alternatives.per.question,
+  n.questions,
+  n.constant.attributes,
+  seed = 123
+)
 }
 \arguments{
 \item{levels.per.attribute}{A \emph{named} vector containing the

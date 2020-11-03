@@ -25,6 +25,8 @@ sampled.
 \code{\link{FitChoiceModel}} for an example, \code{\link{ExtractParameterStats}},
 \code{\link{TracePlots}}
 
-Other HB diagnostics: \code{\link{ExtractParameterStats}},
-  \code{\link{TracePlots}}
+Other HB diagnostics: 
+\code{\link{ExtractParameterStats}()},
+\code{\link{TracePlots}()}
 }
+\concept{HB diagnostics}
