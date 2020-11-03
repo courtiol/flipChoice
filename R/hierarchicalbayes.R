@@ -9,7 +9,7 @@ hierarchicalBayesChoiceModel <- function(dat, n.iterations = 500, n.chains = 8,
                                          beta.draws.to.keep = 0, ...)
 {
     # We want to replace this call with a proper integration of rstan into this package
-    require(rstan)
+    #require(rstan)
 
     # allows Stan chains to run in parallel on multiprocessor machines
     options(mc.cores = parallel::detectCores())
