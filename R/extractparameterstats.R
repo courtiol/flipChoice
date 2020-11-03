@@ -32,7 +32,7 @@ ExtractParameterStats <- function(fit)
      else
          ex <- rstan::extract(fit$stan.fit, pars = c('theta', 'sigma'),
                               permuted = FALSE, inc_warmup = FALSE)
-     sample.stats <- suppressWarnings(rstan::monitor(ex, probs = c()))
+     sample.stats <- suppressWarnings(rstan::monitor(ex))
     rownames(sample.stats) <- makeLabels(fit, TRUE)
     sample.stats
 }
