@@ -443,7 +443,8 @@ mlogitModel <- function(cmd, choices = NULL) {
     copies <- length(choices) / nrow(labeled)
     labeled <- labeled[rep(seq_len(nrow(labeled)), copies), -1]
     labeled$Choice <- choices
-    mlogit.df <- mlogit.data(labeled, choice = "Choice", shape = "long", varying = 3:ncol(labeled),
+    varying_input <- force(3:ncol(labeled))
+    mlogit.df <- mlogit.data(labeled, choice = "Choice", shape = "long", varying = varying_input,
                      alt.var = "Alternative", id.var = "Question", drop.index = TRUE)
 
     form <- paste("Choice ~ ", paste0("`", colnames(mlogit.df)[1:ncol(mlogit.df) - 1], "`", collapse = "+"), "| -1")
